@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "../SF-Pipeline-CI-CD"
+		},
+		{
+			"name": "SF_Pipeline_CI_CD_Project",
+			"path": "../SF-Pipeline-CI-CD/SF_Pipeline_CI_CD_Project"
+		},
+		{
+			"name": "SF_Pipeline_CI_CD_Project",
+			"path": "."
+		}
+	],
+	"settings": {
+		"xml.preferences.showSchemaDocumentationType": "none"
+	}
+}
