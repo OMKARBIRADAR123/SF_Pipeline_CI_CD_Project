@@ -7,4 +7,11 @@
         <shortDescription>Test by git</shortDescription>
         <value>Hiii</value>
     </labels>
+    <labels>
+        <fullName>Hii</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hii</shortDescription>
+        <value>Hii</value>
+    </labels>
 </CustomLabels>
