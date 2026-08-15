@@ -7,4 +7,11 @@
         <shortDescription>Test Label</shortDescription>
         <value>Test by Github in salesforce</value>
     </labels>
+    <labels>
+        <fullName>Test_Label_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Test Label 2</shortDescription>
+        <value>Test.</value>
+    </labels>
 </CustomLabels>
