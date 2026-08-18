@@ -50,20 +50,20 @@ jobs:
 
       - name: Set Environment Variables by Branch
         run: |
-          if [ "${{ github.ref_name }}" == "develop" ] || \
-             [ "${{ github.base_ref }}" == "develop" ]; then
+          if [ "${{ github.ref_name }}" == "Dev_Sandbox_Branch" ] || \
+             [ "${{ github.base_ref }}" == "Dev_Sandbox_Branch" ]; then
             echo "AUTH_URL=${{ secrets.DEV_SANDBOX_ORG_AUTH_URL }}" >> $GITHUB_ENV
             echo "TEST_LEVEL=NoTestRun" >> $GITHUB_ENV
             echo "ENV_NAME=DEV" >> $GITHUB_ENV
 
-          elif [ "${{ github.ref_name }}" == "sit" ] || \
-               [ "${{ github.base_ref }}" == "sit" ]; then
+          elif [ "${{ github.ref_name }}" == "SIT_Sandbox_Branch" ] || \
+               [ "${{ github.base_ref }}" == "SIT_Sandbox_Branch" ]; then
             echo "AUTH_URL=${{ secrets.SIT_SANDBOX_ORG_AUTH_URL }}" >> $GITHUB_ENV
             echo "TEST_LEVEL=RunLocalTests" >> $GITHUB_ENV
             echo "ENV_NAME=SIT" >> $GITHUB_ENV
 
-          elif [ "${{ github.ref_name }}" == "uat" ] || \
-               [ "${{ github.base_ref }}" == "uat" ]; then
+          elif [ "${{ github.ref_name }}" == "UAT_Sandbox_Branch" ] || \
+               [ "${{ github.base_ref }}" == "UAT_Sandbox_Branch" ]; then
             echo "AUTH_URL=${{ secrets.UAT_SANDBOX_ORG_AUTH_URL }}" >> $GITHUB_ENV
             echo "TEST_LEVEL=RunLocalTests" >> $GITHUB_ENV
             echo "ENV_NAME=UAT" >> $GITHUB_ENV
